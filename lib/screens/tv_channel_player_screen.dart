@@ -2,8 +2,8 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:media_kit/media_kit.dart";
 import "package:media_kit_video/media_kit_video.dart";
-import "package:semo/models/tv_channel.dart";
-import "package:semo/screens/base_screen.dart";
+import "package:build_x/models/tv_channel.dart";
+import "package:build_x/screens/base_screen.dart";
 import "package:wakelock_plus/wakelock_plus.dart";
 
 class TvChannelPlayerScreen extends BaseScreen {

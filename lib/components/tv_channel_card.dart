@@ -1,6 +1,6 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-import "package:semo/models/tv_channel.dart";
+import "package:build_x/models/tv_channel.dart";
 
 class TvChannelCard extends StatelessWidget {
   final TvChannel channel;

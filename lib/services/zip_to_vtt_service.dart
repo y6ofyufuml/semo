@@ -5,7 +5,7 @@ import "package:dio/dio.dart";
 import "package:flutter/foundation.dart";
 import "package:logger/logger.dart";
 import "package:path/path.dart" as path;
-import "package:semo/services/subtitles_service.dart";
+import "package:build_x/services/subtitles_service.dart";
 
 class ZipToVttService {
   factory ZipToVttService() => _instance;

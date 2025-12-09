@@ -1,6 +1,6 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-import "package:semo/models/anime.dart";
+import "package:build_x/models/anime.dart";
 
 class AnimeCard extends StatelessWidget {
   final Anime anime;

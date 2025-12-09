@@ -1,5 +1,5 @@
-import "package:semo/models/streaming_server.dart";
-import "package:semo/services/streams_extractor_service/streams_extractor_service.dart";
+import "package:build_x/models/streaming_server.dart";
+import "package:build_x/services/streams_extractor_service/streams_extractor_service.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
 class AppPreferencesService {

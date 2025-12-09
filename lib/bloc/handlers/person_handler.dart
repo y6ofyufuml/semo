@@ -2,11 +2,11 @@ import "dart:async";
 
 import "package:flutter_bloc/flutter_bloc.dart";
 import "package:logger/logger.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/services/tmdb_service.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/services/tmdb_service.dart";
 
 mixin PersonHandler on Bloc<AppEvent, AppState> {
   final Logger _logger = Logger();

@@ -1,7 +1,7 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-import "package:semo/utils/urls.dart";
-import "package:semo/utils/aspect_ratios.dart";
+import "package:build_x/utils/urls.dart";
+import "package:build_x/utils/aspect_ratios.dart";
 
 class MediaCard extends StatelessWidget {
   const MediaCard({

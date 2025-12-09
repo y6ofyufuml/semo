@@ -1,23 +1,23 @@
 import "dart:async";
 
 import "package:flutter_bloc/flutter_bloc.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/bloc/handlers/cache_handler.dart";
-import "package:semo/bloc/handlers/favorites_handler.dart";
-import "package:semo/bloc/handlers/general_handler.dart";
-import "package:semo/bloc/handlers/genres_handler.dart";
-import "package:semo/bloc/handlers/movie_handler.dart";
-import "package:semo/bloc/handlers/movies_handler.dart";
-import "package:semo/bloc/handlers/person_handler.dart";
-import "package:semo/bloc/handlers/recent_searches_handler.dart";
-import "package:semo/bloc/handlers/recently_watched_handler.dart";
-import "package:semo/bloc/handlers/stream_handler.dart";
-import "package:semo/bloc/handlers/trailer_handler.dart";
-import "package:semo/bloc/handlers/streaming_platforms_handler.dart";
-import "package:semo/bloc/handlers/tv_show_handler.dart";
-import "package:semo/bloc/handlers/tv_shows_handler.dart";
-import "package:semo/services/auth_service.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/bloc/handlers/cache_handler.dart";
+import "package:build_x/bloc/handlers/favorites_handler.dart";
+import "package:build_x/bloc/handlers/general_handler.dart";
+import "package:build_x/bloc/handlers/genres_handler.dart";
+import "package:build_x/bloc/handlers/movie_handler.dart";
+import "package:build_x/bloc/handlers/movies_handler.dart";
+import "package:build_x/bloc/handlers/person_handler.dart";
+import "package:build_x/bloc/handlers/recent_searches_handler.dart";
+import "package:build_x/bloc/handlers/recently_watched_handler.dart";
+import "package:build_x/bloc/handlers/stream_handler.dart";
+import "package:build_x/bloc/handlers/trailer_handler.dart";
+import "package:build_x/bloc/handlers/streaming_platforms_handler.dart";
+import "package:build_x/bloc/handlers/tv_show_handler.dart";
+import "package:build_x/bloc/handlers/tv_shows_handler.dart";
+import "package:build_x/services/auth_service.dart";
 
 class AppBloc extends Bloc<AppEvent, AppState>
     with GeneralHandler, CacheHandler, MoviesHandler, TvShowsHandler, StreamingPlatformsHandler, GenresHandler, RecentlyWatchedHandler, FavoritesHandler, MovieHandler, TvShowHandler, PersonHandler, RecentSearchesHandler, StreamHandler, TrailerHandler {

@@ -1,18 +1,18 @@
 import "dart:async";
 
 import "package:flutter/material.dart";
-import "package:semo/gen/assets.gen.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/screens/favorites_screen.dart";
-import "package:semo/models/fragment_screen.dart";
-import "package:semo/screens/movies_screen.dart";
-import "package:semo/screens/search_screen.dart";
-import "package:semo/screens/settings_screen.dart";
-import "package:semo/screens/tv_shows_screen.dart";
-import "package:semo/screens/tv_channels_screen.dart";
-import "package:semo/screens/anime_screen.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/utils/navigation_helper.dart";
+import "package:build_x/gen/assets.gen.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/screens/favorites_screen.dart";
+import "package:build_x/models/fragment_screen.dart";
+import "package:build_x/screens/movies_screen.dart";
+import "package:build_x/screens/search_screen.dart";
+import "package:build_x/screens/settings_screen.dart";
+import "package:build_x/screens/tv_shows_screen.dart";
+import "package:build_x/screens/tv_channels_screen.dart";
+import "package:build_x/screens/anime_screen.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/utils/navigation_helper.dart";
 
 class FragmentsScreen extends BaseScreen {
   const FragmentsScreen({

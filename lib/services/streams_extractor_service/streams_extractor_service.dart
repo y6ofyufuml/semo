@@ -3,16 +3,16 @@ import "dart:io";
 import "dart:math" as math;
 
 import "package:logger/logger.dart";
-import "package:semo/enums/stream_type.dart";
-import "package:semo/models/stream_extractor_options.dart";
-import "package:semo/models/streaming_server.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/services/streams_extractor_service/extractors/base_stream_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/superembed_extractor.dart";
-import "package:semo/services/app_preferences_service.dart";
-import "package:semo/services/streams_extractor_service/extractors/utils/closest_resolution.dart";
-import "package:semo/services/video_quality_service.dart";
+import "package:build_x/enums/stream_type.dart";
+import "package:build_x/models/stream_extractor_options.dart";
+import "package:build_x/models/streaming_server.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/services/streams_extractor_service/extractors/base_stream_extractor.dart";
+import "package:build_x/services/streams_extractor_service/extractors/superembed_extractor.dart";
+import "package:build_x/services/app_preferences_service.dart";
+import "package:build_x/services/streams_extractor_service/extractors/utils/closest_resolution.dart";
+import "package:build_x/services/video_quality_service.dart";
 
 class StreamsExtractorService {
   factory StreamsExtractorService() => _instance;

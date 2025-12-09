@@ -1,8 +1,8 @@
 import "dart:convert";
 
 import "package:flutter/material.dart";
-import "package:semo/gen/assets.gen.dart";
-import "package:semo/screens/base_screen.dart";
+import "package:build_x/gen/assets.gen.dart";
+import "package:build_x/screens/base_screen.dart";
 import "package:url_launcher/url_launcher.dart";
 
 class OpenSourceLibrariesScreen extends BaseScreen {

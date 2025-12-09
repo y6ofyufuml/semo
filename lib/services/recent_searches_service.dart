@@ -1,9 +1,9 @@
 import "package:cloud_firestore/cloud_firestore.dart";
 import "package:firebase_auth/firebase_auth.dart";
 import "package:logger/logger.dart";
-import "package:semo/services/firestore_collection_names.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/utils/string_extensions.dart";
+import "package:build_x/services/firestore_collection_names.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/utils/string_extensions.dart";
 
 class RecentSearchesService {
   factory RecentSearchesService() => _instance;

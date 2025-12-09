@@ -29,6 +29,9 @@ class Anime {
     this.episodes = const <AnimeEpisode>[],
   });
 
+  // Getter for compatibility with existing code that uses 'title'
+  String get title => name;
+
   factory Anime.fromJson(Map<String, dynamic> json) {
     return Anime(
       id: json['id'] as String? ?? '',

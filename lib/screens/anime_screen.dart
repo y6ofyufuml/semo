@@ -1,12 +1,12 @@
 import "package:flutter/material.dart";
 import "package:font_awesome_flutter/font_awesome_flutter.dart";
-import "package:semo/components/anime_card.dart";
-import "package:semo/components/spinner.dart";
-import "package:semo/models/anime.dart";
-import "package:semo/screens/anime_details_screen.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/services/anime_service.dart";
-import "package:semo/utils/navigation_helper.dart";
+import "package:build_x/components/anime_card.dart";
+import "package:build_x/components/spinner.dart";
+import "package:build_x/models/anime.dart";
+import "package:build_x/screens/anime_details_screen.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/services/anime_service.dart";
+import "package:build_x/utils/navigation_helper.dart";
 
 class AnimeScreen extends BaseScreen {
   const AnimeScreen({super.key});
@@ -102,7 +102,7 @@ class _AnimeScreenState extends BaseScreenState<AnimeScreen> with TickerProvider
         ],
       ),
       body: _isLoading
-          ? const Center(child: Spinner())
+          ? const Center(child: CircularProgressIndicator())
           : TabBarView(
               controller: _tabController,
               children: <Widget>[

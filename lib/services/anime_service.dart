@@ -3,9 +3,9 @@ import "dart:convert";
 
 import "package:dio/dio.dart";
 import "package:logger/logger.dart";
-import "package:semo/models/anime.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/enums/stream_type.dart";
+import "package:build_x/models/anime.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/enums/stream_type.dart";
 
 class AnimeService {
   factory AnimeService() => _instance;

@@ -1,6 +1,6 @@
-import "package:semo/enums/stream_type.dart";
-import "package:semo/models/stream_audio.dart";
-import "package:semo/models/stream_subtitles.dart";
+import "package:build_x/enums/stream_type.dart";
+import "package:build_x/models/stream_audio.dart";
+import "package:build_x/models/stream_subtitles.dart";
 
 class MediaStream {
   MediaStream({

@@ -4,10 +4,10 @@ import "package:dio/dio.dart";
 import "package:flutter/foundation.dart";
 import "package:logger/logger.dart";
 import "package:pretty_dio_logger/pretty_dio_logger.dart";
-import "package:semo/enums/stream_type.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/services/youtube_extractor_service/extractors/base_youtube_extractor.dart";
-import "package:semo/services/youtube_extractor_service/extractors/utils/youtube_helpers.dart";
+import "package:build_x/enums/stream_type.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/base_youtube_extractor.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/utils/youtube_helpers.dart";
 
 class InvidiousExtractor extends BaseYoutubeExtractor {
   InvidiousExtractor() {

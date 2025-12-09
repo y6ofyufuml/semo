@@ -3,7 +3,7 @@ import "dart:math" as math;
 import "package:cloud_firestore/cloud_firestore.dart";
 import "package:firebase_auth/firebase_auth.dart";
 import "package:logger/logger.dart";
-import "package:semo/services/firestore_collection_names.dart";
+import "package:build_x/services/firestore_collection_names.dart";
 
 class RecentlyWatchedService {
   factory RecentlyWatchedService() => _instance;

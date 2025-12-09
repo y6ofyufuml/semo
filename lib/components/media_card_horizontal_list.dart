@@ -1,10 +1,10 @@
 import "package:flutter/material.dart";
 import "package:infinite_scroll_pagination/infinite_scroll_pagination.dart";
-import "package:semo/components/horizontal_media_list.dart";
-import "package:semo/components/media_card.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/screens/view_all_screen.dart";
-import "package:semo/utils/navigation_helper.dart";
+import "package:build_x/components/horizontal_media_list.dart";
+import "package:build_x/components/media_card.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/screens/view_all_screen.dart";
+import "package:build_x/utils/navigation_helper.dart";
 
 class MediaCardHorizontalList extends StatelessWidget {
   const MediaCardHorizontalList({

@@ -1,6 +1,6 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-import "package:semo/utils/urls.dart";
+import "package:build_x/utils/urls.dart";
 
 class CarouselPoster extends StatelessWidget {
   const CarouselPoster({

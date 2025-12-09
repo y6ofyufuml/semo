@@ -1,7 +1,7 @@
-import "package:semo/models/movie.dart";
-import "package:semo/models/person.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/enums/media_type.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/person.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/enums/media_type.dart";
 
 class SearchResults {
   SearchResults({

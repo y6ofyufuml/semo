@@ -3,15 +3,15 @@ import "dart:async";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
-import "package:semo/bloc/app_bloc.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/components/semo_player.dart";
-import "package:semo/components/snack_bar.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/services/recently_watched_service.dart";
-import "package:semo/enums/media_type.dart";
+import "package:build_x/bloc/app_bloc.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/components/semo_player.dart";
+import "package:build_x/components/snack_bar.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/services/recently_watched_service.dart";
+import "package:build_x/enums/media_type.dart";
 import "package:wakelock_plus/wakelock_plus.dart";
 
 class PlayerScreen extends BaseScreen {

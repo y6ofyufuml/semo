@@ -2,10 +2,10 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:media_kit/media_kit.dart";
 import "package:media_kit_video/media_kit_video.dart";
-import "package:semo/models/anime.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/services/anime_service.dart";
+import "package:build_x/models/anime.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/services/anime_service.dart";
 import "package:wakelock_plus/wakelock_plus.dart";
 
 class AnimePlayerScreen extends BaseScreen {

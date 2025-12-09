@@ -3,7 +3,7 @@ import "dart:convert";
 
 import "package:dio/dio.dart";
 import "package:logger/logger.dart";
-import "package:semo/models/tv_channel.dart";
+import "package:build_x/models/tv_channel.dart";
 import "package:shared_preferences/shared_preferences.dart";
 
 class IptvService {

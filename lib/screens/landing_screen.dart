@@ -2,13 +2,13 @@ import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
 import "package:font_awesome_flutter/font_awesome_flutter.dart";
 import "package:lottie/lottie.dart";
-import "package:semo/bloc/app_bloc.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/components/snack_bar.dart";
-import "package:semo/gen/assets.gen.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/screens/fragments_screen.dart";
-import "package:semo/services/auth_service.dart";
+import "package:build_x/bloc/app_bloc.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/components/snack_bar.dart";
+import "package:build_x/gen/assets.gen.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/screens/fragments_screen.dart";
+import "package:build_x/services/auth_service.dart";
 
 class LandingScreen extends BaseScreen {
   const LandingScreen({super.key}) : super(shouldListenToAuthStateChanges: false);
@@ -201,8 +201,9 @@ class _LandingScreenState extends BaseScreenState<LandingScreen> with TickerProv
                           style: Theme.of(context).textTheme.displayMedium,
                         ),
                         const Spacer(),
-                    ],
-                  ),
+                      ],
+                    ),
+                  ],
                 ),
               ],
             ),

@@ -1,10 +1,10 @@
 import "package:carousel_slider/carousel_slider.dart" as slider;
 import "package:flutter/material.dart";
-import "package:semo/components/carousel_poster.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/utils/aspect_ratios.dart";
+import "package:build_x/components/carousel_poster.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/utils/aspect_ratios.dart";
 import "package:smooth_page_indicator/smooth_page_indicator.dart";
 
 class CarouselSlider extends StatelessWidget {

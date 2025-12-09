@@ -2,9 +2,9 @@ import "package:dio/dio.dart";
 import "package:flutter/foundation.dart";
 import "package:logger/logger.dart";
 import "package:pretty_dio_logger/pretty_dio_logger.dart";
-import "package:semo/enums/subtitles_type.dart";
-import "package:semo/models/stream_subtitles.dart";
-import "package:semo/utils/urls.dart";
+import "package:build_x/enums/subtitles_type.dart";
+import "package:build_x/models/stream_subtitles.dart";
+import "package:build_x/utils/urls.dart";
 
 class SubtitlesService {
   factory SubtitlesService() {

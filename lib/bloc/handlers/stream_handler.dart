@@ -2,13 +2,13 @@ import "dart:async";
 
 import "package:flutter_bloc/flutter_bloc.dart";
 import "package:logger/logger.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/models/stream_extractor_options.dart";
-import "package:semo/models/stream_subtitles.dart";
-import "package:semo/services/subtitles_service.dart";
-import "package:semo/services/streams_extractor_service/streams_extractor_service.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/models/stream_extractor_options.dart";
+import "package:build_x/models/stream_subtitles.dart";
+import "package:build_x/services/subtitles_service.dart";
+import "package:build_x/services/streams_extractor_service/streams_extractor_service.dart";
 
 mixin StreamHandler on Bloc<AppEvent, AppState> {
   final Logger _logger = Logger();

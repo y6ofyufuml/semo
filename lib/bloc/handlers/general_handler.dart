@@ -1,7 +1,7 @@
 import "package:flutter_bloc/flutter_bloc.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/enums/media_type.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/enums/media_type.dart";
 
 mixin GeneralHandler on Bloc<AppEvent, AppState> {
   void onLoadInitialData(LoadInitialData event, Emitter<AppState> emit) {

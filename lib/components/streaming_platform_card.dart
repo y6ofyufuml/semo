@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import "package:semo/models/streaming_platform.dart";
-import "package:semo/utils/aspect_ratios.dart";
+import "package:build_x/models/streaming_platform.dart";
+import "package:build_x/utils/aspect_ratios.dart";
 
 class StreamingPlatformCard extends StatelessWidget {
   const StreamingPlatformCard({

@@ -1,10 +1,10 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/models/genre.dart";
-import "package:semo/services/tmdb_service.dart";
-import "package:semo/utils/urls.dart";
-import "package:semo/utils/aspect_ratios.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/models/genre.dart";
+import "package:build_x/services/tmdb_service.dart";
+import "package:build_x/utils/urls.dart";
+import "package:build_x/utils/aspect_ratios.dart";
 
 class GenreCard extends StatefulWidget {
   const GenreCard({

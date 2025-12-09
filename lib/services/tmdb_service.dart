@@ -5,16 +5,16 @@ import "package:dio/dio.dart";
 import "package:flutter/foundation.dart";
 import "package:logger/logger.dart";
 import "package:pretty_dio_logger/pretty_dio_logger.dart";
-import "package:semo/models/episode.dart";
-import "package:semo/models/genre.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/season.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/models/person.dart";
-import "package:semo/models/search_results.dart";
-import "package:semo/services/secrets_service.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/utils/urls.dart";
+import "package:build_x/models/episode.dart";
+import "package:build_x/models/genre.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/season.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/models/person.dart";
+import "package:build_x/models/search_results.dart";
+import "package:build_x/services/secrets_service.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/utils/urls.dart";
 
 class TMDBService {
   factory TMDBService() {

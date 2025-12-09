@@ -2,18 +2,18 @@ import "dart:async";
 
 import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
-import "package:semo/bloc/app_bloc.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/components/media_card.dart";
-import "package:semo/components/vertical_media_list.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/person.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/screens/movie_screen.dart";
-import "package:semo/screens/tv_show_screen.dart";
-import "package:semo/enums/media_type.dart";
+import "package:build_x/bloc/app_bloc.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/components/media_card.dart";
+import "package:build_x/components/vertical_media_list.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/person.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/screens/movie_screen.dart";
+import "package:build_x/screens/tv_show_screen.dart";
+import "package:build_x/enums/media_type.dart";
 
 class PersonMediaScreen extends BaseScreen {
   const PersonMediaScreen(this.person, {super.key});

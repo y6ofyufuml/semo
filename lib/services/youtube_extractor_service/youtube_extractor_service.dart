@@ -1,9 +1,9 @@
 import "package:logger/logger.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/services/youtube_extractor_service/extractors/base_youtube_extractor.dart";
-import "package:semo/services/youtube_extractor_service/extractors/invidious_extractor.dart";
-import "package:semo/services/youtube_extractor_service/extractors/piped_extractor.dart";
-import "package:semo/services/youtube_extractor_service/extractors/poke_extractor.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/base_youtube_extractor.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/invidious_extractor.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/piped_extractor.dart";
+import "package:build_x/services/youtube_extractor_service/extractors/poke_extractor.dart";
 
 class YoutubeExtractorService {
   factory YoutubeExtractorService() => _instance;

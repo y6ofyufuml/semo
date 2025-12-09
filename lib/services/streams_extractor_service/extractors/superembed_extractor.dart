@@ -4,12 +4,14 @@ import "dart:io";
 
 import "package:dio/dio.dart";
 import "package:logger/logger.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/enums/stream_type.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/models/stream_extractor_options.dart";
-import "package:semo/services/streams_extractor_service/extractors/base_stream_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/utils/common_headers.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/enums/stream_type.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/models/stream_extractor_options.dart";
+import "package:build_x/models/stream_subtitles.dart";
+import "package:build_x/models/stream_audio.dart";
+import "package:build_x/services/streams_extractor_service/extractors/base_stream_extractor.dart";
+import "package:build_x/services/streams_extractor_service/extractors/utils/common_headers.dart";
 
 class SuperEmbedExtractor extends BaseStreamExtractor {
   final Logger _logger = Logger();
@@ -86,8 +88,8 @@ class SuperEmbedExtractor extends BaseStreamExtractor {
         url: playerUrl,
         quality: "VIP Multi-Quality",
         headers: getCommonHeaders(),
-        subtitles: <String>[],
-        audios: <String>[],
+        subtitles: <StreamSubtitles>[],
+        audios: <StreamAudio>[],
         hasDefaultAudio: true,
       );
 
@@ -115,8 +117,8 @@ class SuperEmbedExtractor extends BaseStreamExtractor {
         url: playerUrl,
         quality: "Standard",
         headers: getCommonHeaders(),
-        subtitles: <String>[],
-        audios: <String>[],
+        subtitles: <StreamSubtitles>[],
+        audios: <StreamAudio>[],
         hasDefaultAudio: true,
       );
 

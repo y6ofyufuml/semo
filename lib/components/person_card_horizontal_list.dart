@@ -1,9 +1,9 @@
 import "package:flutter/material.dart";
-import "package:semo/components/horizontal_media_list.dart";
-import "package:semo/components/person_card.dart";
-import "package:semo/models/person.dart";
-import "package:semo/screens/person_media_screen.dart";
-import "package:semo/utils/navigation_helper.dart";
+import "package:build_x/components/horizontal_media_list.dart";
+import "package:build_x/components/person_card.dart";
+import "package:build_x/models/person.dart";
+import "package:build_x/screens/person_media_screen.dart";
+import "package:build_x/utils/navigation_helper.dart";
 
 class PersonCardHorizontalList extends StatelessWidget {
   const PersonCardHorizontalList({

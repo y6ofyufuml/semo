@@ -7,11 +7,11 @@ import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
 import "package:internet_connection_checker_plus/internet_connection_checker_plus.dart";
 import "package:logger/logger.dart";
-import "package:semo/components/spinner.dart";
-import "package:semo/screens/landing_screen.dart";
-import "package:semo/utils/navigation_helper.dart";
+import "package:build_x/components/spinner.dart";
+import "package:build_x/screens/landing_screen.dart";
+import "package:build_x/utils/navigation_helper.dart";
 import "package:url_launcher/url_launcher.dart";
-import "package:semo/utils/urls.dart";
+import "package:build_x/utils/urls.dart";
 
 abstract class BaseScreen extends StatefulWidget {
   const BaseScreen({

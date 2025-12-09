@@ -1,6 +1,6 @@
 import "dart:async";
 
-import "package:semo/services/page_network_requests_service.dart";
+import "package:build_x/services/page_network_requests_service.dart";
 
 // ignore_for_file: unnecessary_string_escapes
 

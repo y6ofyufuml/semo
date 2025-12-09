@@ -1,12 +1,12 @@
 import "package:cached_network_image/cached_network_image.dart";
 import "package:flutter/material.dart";
-// import "package:semo/components/episode_card.dart";
-import "package:semo/components/spinner.dart";
-import "package:semo/models/anime.dart";
-import "package:semo/screens/anime_player_screen.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/services/anime_service.dart";
-import "package:semo/utils/navigation_helper.dart";
+// import "package:build_x/components/episode_card.dart";
+import "package:build_x/components/spinner.dart";
+import "package:build_x/models/anime.dart";
+import "package:build_x/screens/anime_player_screen.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/services/anime_service.dart";
+import "package:build_x/utils/navigation_helper.dart";
 
 class AnimeDetailsScreen extends BaseScreen {
   final Anime anime;
@@ -95,7 +95,7 @@ class _AnimeDetailsScreenState extends BaseScreenState<AnimeDetailsScreen> {
 
     return Scaffold(
       body: _isLoading
-          ? const Center(child: Spinner())
+          ? const Center(child: CircularProgressIndicator())
           : CustomScrollView(
               slivers: <Widget>[
                 _buildSliverAppBar(currentAnime),
@@ -351,7 +351,7 @@ class _AnimeDetailsScreenState extends BaseScreenState<AnimeDetailsScreen> {
           ),
         ),
         if (_isLoadingEpisodes)
-          const Center(child: Spinner())
+          const Center(child: CircularProgressIndicator())
         else if (_episodes.isEmpty)
           const Padding(
             padding: EdgeInsets.all(16),

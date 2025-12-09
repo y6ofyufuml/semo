@@ -1,4 +1,4 @@
-import "package:semo/models/genre.dart";
+import "package:build_x/models/genre.dart";
 
 class TvShow {
   TvShow({

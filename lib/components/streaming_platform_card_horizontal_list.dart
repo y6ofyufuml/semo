@@ -1,12 +1,12 @@
 import "package:flutter/material.dart";
 import "package:infinite_scroll_pagination/infinite_scroll_pagination.dart";
-import "package:semo/components/horizontal_media_list.dart";
-import "package:semo/components/streaming_platform_card.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/models/streaming_platform.dart";
-import "package:semo/screens/view_all_screen.dart";
-import "package:semo/utils/navigation_helper.dart";
-import "package:semo/utils/streaming_platforms.dart";
+import "package:build_x/components/horizontal_media_list.dart";
+import "package:build_x/components/streaming_platform_card.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/models/streaming_platform.dart";
+import "package:build_x/screens/view_all_screen.dart";
+import "package:build_x/utils/navigation_helper.dart";
+import "package:build_x/utils/streaming_platforms.dart";
 
 class StreamingPlatformCardHorizontalList extends StatelessWidget {
   const StreamingPlatformCardHorizontalList({

@@ -3,15 +3,15 @@ import "dart:async";
 import "package:flutter_bloc/flutter_bloc.dart";
 import "package:infinite_scroll_pagination/infinite_scroll_pagination.dart";
 import "package:logger/logger.dart";
-import "package:semo/bloc/app_event.dart";
-import "package:semo/bloc/app_state.dart";
-import "package:semo/enums/media_type.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/search_results.dart";
-import "package:semo/models/streaming_platform.dart";
-import "package:semo/models/tv_show.dart";
-import "package:semo/services/tmdb_service.dart";
-import "package:semo/utils/streaming_platforms.dart";
+import "package:build_x/bloc/app_event.dart";
+import "package:build_x/bloc/app_state.dart";
+import "package:build_x/enums/media_type.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/search_results.dart";
+import "package:build_x/models/streaming_platform.dart";
+import "package:build_x/models/tv_show.dart";
+import "package:build_x/services/tmdb_service.dart";
+import "package:build_x/utils/streaming_platforms.dart";
 
 mixin StreamingPlatformsHandler on Bloc<AppEvent, AppState> {
   final Logger _logger = Logger();

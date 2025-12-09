@@ -1,14 +1,14 @@
 import "dart:async";
 
 import "package:infinite_scroll_pagination/infinite_scroll_pagination.dart";
-import "package:semo/models/episode.dart";
-import "package:semo/models/genre.dart";
-import "package:semo/models/media_stream.dart";
-import "package:semo/models/stream_subtitles.dart";
-import "package:semo/models/movie.dart";
-import "package:semo/models/person.dart";
-import "package:semo/models/season.dart";
-import "package:semo/models/tv_show.dart";
+import "package:build_x/models/episode.dart";
+import "package:build_x/models/genre.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/models/stream_subtitles.dart";
+import "package:build_x/models/movie.dart";
+import "package:build_x/models/person.dart";
+import "package:build_x/models/season.dart";
+import "package:build_x/models/tv_show.dart";
 
 class AppState {
   const AppState({

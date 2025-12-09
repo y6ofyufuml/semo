@@ -2,8 +2,8 @@ import "dart:async";
 
 import "package:media_kit/media_kit.dart";
 
-import "package:semo/models/media_stream.dart";
-import "package:semo/services/streams_extractor_service/extractors/utils/closest_resolution.dart";
+import "package:build_x/models/media_stream.dart";
+import "package:build_x/services/streams_extractor_service/extractors/utils/closest_resolution.dart";
 
 class VideoQualityService {
   const VideoQualityService();

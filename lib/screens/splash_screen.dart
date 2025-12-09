@@ -2,11 +2,11 @@ import "dart:async";
 
 import "package:flutter/material.dart";
 import "package:package_info_plus/package_info_plus.dart";
-import "package:semo/gen/assets.gen.dart";
-import "package:semo/screens/base_screen.dart";
-import "package:semo/screens/fragments_screen.dart";
-import "package:semo/screens/landing_screen.dart";
-import "package:semo/services/auth_service.dart";
+import "package:build_x/gen/assets.gen.dart";
+import "package:build_x/screens/base_screen.dart";
+import "package:build_x/screens/fragments_screen.dart";
+import "package:build_x/screens/landing_screen.dart";
+import "package:build_x/services/auth_service.dart";
 
 class SplashScreen extends BaseScreen {
   const SplashScreen({super.key})

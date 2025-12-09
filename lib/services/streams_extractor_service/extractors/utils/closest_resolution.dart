@@ -1,4 +1,4 @@
-import "package:semo/utils/string_extensions.dart";
+import "package:build_x/utils/string_extensions.dart";
 
 String getClosestResolutionFromDimensions(int width, int height) {
   final Map<String, List<int>> resolutions = <String, List<int>>{

@@ -1,4 +1,4 @@
-import "package:semo/enums/subtitles_type.dart";
+import "package:build_x/enums/subtitles_type.dart";
 
 class StreamSubtitles {
   const StreamSubtitles({
