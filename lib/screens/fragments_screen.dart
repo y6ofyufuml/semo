@@ -9,6 +9,8 @@ import "package:semo/screens/movies_screen.dart";
 import "package:semo/screens/search_screen.dart";
 import "package:semo/screens/settings_screen.dart";
 import "package:semo/screens/tv_shows_screen.dart";
+import "package:semo/screens/tv_channels_screen.dart";
+import "package:semo/screens/anime_screen.dart";
 import "package:semo/enums/media_type.dart";
 import "package:semo/utils/navigation_helper.dart";
 
@@ -46,6 +48,16 @@ class _FragmentsScreenState extends BaseScreenState<FragmentsScreen> with Ticker
           title: "TV Shows",
           widget: TvShowsScreen(),
           mediaType: MediaType.tvShows,
+        ),
+        const FragmentScreen(
+          icon: Icons.tv,
+          title: "TV Channels",
+          widget: TvChannelsScreen(),
+        ),
+        const FragmentScreen(
+          icon: Icons.animation,
+          title: "Anime",
+          widget: AnimeScreen(),
         ),
         FragmentScreen(
           icon: Icons.favorite,
@@ -210,7 +222,7 @@ class _FragmentsScreenState extends BaseScreenState<FragmentsScreen> with Ticker
                     ),
                   )
                 : null,
-            bottom: _selectedPageIndex == 2
+            bottom: _selectedPageIndex == 4
                 ? TabBar(
                     controller: _tabController,
                     tabs: const <Tab>[

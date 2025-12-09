@@ -1,6 +1,6 @@
-name: semo
-description: "Semo is designed to offer a seamless movie and TV show streaming experience."
-version: 2.4.6+9
+name: build_x
+description: "Build X is designed to offer a seamless movie, TV show, anime and live TV streaming experience."
+version: 1.0.0+1
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

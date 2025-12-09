@@ -8,20 +8,10 @@ import "package:semo/models/stream_extractor_options.dart";
 import "package:semo/models/streaming_server.dart";
 import "package:semo/models/media_stream.dart";
 import "package:semo/enums/media_type.dart";
-import "package:semo/services/streams_extractor_service/extractors/anime_world_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/auto_embed_extractor.dart";
 import "package:semo/services/streams_extractor_service/extractors/base_stream_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/holly_movie_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/kiss_kh_extractor.dart";
+import "package:semo/services/streams_extractor_service/extractors/superembed_extractor.dart";
 import "package:semo/services/app_preferences_service.dart";
-import "package:semo/services/streams_extractor_service/extractors/movies_api_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/movies_joy_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/multi_movies_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/vid_fast_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/vid_link_extractor.dart";
 import "package:semo/services/streams_extractor_service/extractors/utils/closest_resolution.dart";
-import "package:semo/services/streams_extractor_service/extractors/vid_rock_extractor.dart";
-import "package:semo/services/streams_extractor_service/extractors/xprime_extractor.dart";
 import "package:semo/services/video_quality_service.dart";
 
 class StreamsExtractorService {
@@ -34,21 +24,7 @@ class StreamsExtractorService {
   final VideoQualityService _videoQualityService = const VideoQualityService();
   final List<StreamingServer> _streamingServers = <StreamingServer>[
     const StreamingServer(name: "Random", extractor: null),
-    StreamingServer(name: "AnimeWorld", extractor: AnimeWorldExtractor()),
-    StreamingServer(name: "AutoEmbed", extractor: AutoEmbedExtractor()),
-    if (!Platform.isIOS) StreamingServer(name: "HollyMovie", extractor: HollyMovieExtractor()),
-    StreamingServer(name: "KissKh", extractor: KissKhExtractor()),
-    StreamingServer(name: "MoviesApi", extractor: MoviesApiExtractor()),
-    StreamingServer(name: "MoviesJoy", extractor: MoviesJoyExtractor()),
-    StreamingServer(name: "MultiMovies", extractor: MultiMoviesExtractor()),
-    StreamingServer(name: "VidFast", extractor: VidFastExtractor()),
-    StreamingServer(name: "VidLink", extractor: VidLinkExtractor()),
-    StreamingServer(name: "VidRock", extractor: VidRockExtractor()),
-    StreamingServer(name: "Xprime", extractor: XprimeExtractor()),
-
-    // Broken
-    // if (!Platform.isIOS) StreamingServer(name: "MappleTV", extractor: MappleTvExtractor()), // As of 19.09.2025, blocked by Cloudflare
-    // if (!Platform.isIOS) StreamingServer(name: "ShowBox", extractor: ShowBoxExtractor()), // As of 18.09.2025, blocked by Cloudflare
+    StreamingServer(name: "SuperEmbed", extractor: SuperEmbedExtractor()),
   ];
 
   List<StreamingServer> getStreamingServers() => _streamingServers;
@@ -102,9 +78,7 @@ class StreamsExtractorService {
         final StreamingServer server = randomServers.removeAt(randomIndex);
         final BaseStreamExtractor extractor = server.extractor!;
 
-        if (extractor is AnimeWorldExtractor) {
-          continue;
-        }
+        // No specific exclusions for SuperEmbed
 
         final List<MediaStream> streams = await _extractStreamsForServer(extractor, options, server.name);
 

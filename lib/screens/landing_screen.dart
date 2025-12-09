@@ -67,6 +67,24 @@ class _LandingScreenState extends BaseScreenState<LandingScreen> with TickerProv
     spinner.dismiss();
   }
 
+  Future<void> _continueAsGuest() async {
+    await logEvent(
+      "auth_guest_access",
+      parameters: <String, Object?>{
+        "provider": "guest",
+      },
+    );
+
+    if (mounted) {
+      context.read<AppBloc>().add(LoadInitialData());
+    }
+
+    await navigate(
+      const FragmentsScreen(),
+      replace: true,
+    );
+  }
+
   Widget _buildContinueWithGoogleButton() => Container(
         width: double.infinity,
         height: 60,
@@ -123,6 +141,68 @@ class _LandingScreenState extends BaseScreenState<LandingScreen> with TickerProv
                       ],
                     ),
                   ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+
+  Widget _buildContinueAsGuestButton() => Container(
+        width: double.infinity,
+        height: 60,
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.transparent,
+            side: BorderSide(
+              width: 3,
+              color: Theme.of(context).primaryColor,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+          ),
+          onPressed: () async {
+            await logEvent(
+              "cta_click",
+              parameters: <String, Object?>{
+                "button": "continue_as_guest",
+              },
+            );
+            await _continueAsGuest();
+          },
+          child: Container(
+            width: double.infinity,
+            child: Stack(
+              children: <Widget>[
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Icon(
+                      Icons.person_outline,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ],
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(
+                    right: 16,
+                  ),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        const Spacer(),
+                        Text(
+                          "Continue as Guest",
+                          style: Theme.of(context).textTheme.displayMedium,
+                        ),
+                        const Spacer(),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -189,7 +269,13 @@ class _LandingScreenState extends BaseScreenState<LandingScreen> with TickerProv
                     margin: const EdgeInsets.only(
                       bottom: 18,
                     ),
-                    child: _buildContinueWithGoogleButton(),
+                    child: Column(
+                      children: <Widget>[
+                        _buildContinueWithGoogleButton(),
+                        const SizedBox(height: 12),
+                        _buildContinueAsGuestButton(),
+                      ],
+                    ),
                   ),
                 ),
               ],
